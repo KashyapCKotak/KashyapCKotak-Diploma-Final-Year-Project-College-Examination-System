@@ -1,0 +1,11 @@
+After Installing College Examination System, copy the files in the folder "Support files for CES" into the installation folder.
+
+
+Set the data source in admin login to make an access to the folder containing vital files and the database.(here, copy the Examiner folder containing all the necessary files where you want and set the data source accordingly)
+
+
+For Product Support contact at kckotak99@gmail.com
+Developer-Kashyap Chetan Kotak
+	 -9869618609
+
+The "Error in result/report generation" bug to be fixed shortly.........

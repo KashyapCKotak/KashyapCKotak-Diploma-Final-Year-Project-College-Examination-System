@@ -1,0 +1,7 @@
+Unregistered DLLs - None
+
+Registered DLLs:
+{831FDD16-0C5C-11D2-A9FC-0000F8754DA1} v2.0	[MSComctlLib]	"C:\Windows\system32\MSCOMCTL.OCX"
+{3B7C8863-D78F-101B-B9B5-04021C009402} v1.2	[RichTextLib]	"C:\Windows\system32\Richtx32.ocx"
+{C1A8AF28-1257-101B-8FB0-0020AF039CA3} v1.1	[MCI]	"C:\Windows\system32\MCI32.OCX"
+{BDC217C8-ED16-11CD-956C-0000C04E4C0A} v1.1	[TabDlg]	"C:\Windows\system32\Tabctl32.ocx"

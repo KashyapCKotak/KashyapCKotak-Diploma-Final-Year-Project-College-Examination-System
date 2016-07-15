@@ -1,0 +1,289 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectType>Local</ProjectType>
+		<ProductVersion>8.0.50727</ProductVersion>
+		<SchemaVersion>2.0</SchemaVersion>
+		<ProjectGuid>{5B154092-7F54-41E4-9BB2-4951E8E72DE7}</ProjectGuid>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ApplicationIcon>MDIForm1_Icon.ico</ApplicationIcon>
+		<AssemblyKeyContainerName>
+		</AssemblyKeyContainerName>
+		<AssemblyName>CES</AssemblyName>
+		<AssemblyOriginatorKeyFile>
+		</AssemblyOriginatorKeyFile>
+		<AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+		<DefaultClientScript>JScript</DefaultClientScript>
+		<DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+		<DefaultTargetSchema>IE50</DefaultTargetSchema>
+		<DelaySign>false</DelaySign>
+		<OutputType>WinExe</OutputType>
+		<OptionCompare>Binary</OptionCompare>
+		<OptionExplicit>On</OptionExplicit>
+		<OptionStrict>Off</OptionStrict>
+		<RootNamespace>CES</RootNamespace>
+		<StartupObject>CES.frmSplash</StartupObject>
+		<FileUpgradeFlags>
+		</FileUpgradeFlags>
+		<MyType>WindowsFormsWithCustomSubMain</MyType>
+		<UpgradeBackupLocation>
+		</UpgradeBackupLocation>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<OutputPath>bin\</OutputPath>
+		<DocumentationFile>CES.xml</DocumentationFile>
+		<BaseAddress>285212672</BaseAddress>
+		<ConfigurationOverrideFile>
+		</ConfigurationOverrideFile>
+		<DefineDebug>true</DefineDebug>
+		<DefineTrace>true</DefineTrace>
+		<DebugSymbols>true</DebugSymbols>
+		<Optimize>false</Optimize>
+		<RegisterForComInterop>false</RegisterForComInterop>
+		<RemoveIntegerChecks>false</RemoveIntegerChecks>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<WarningLevel>1</WarningLevel>
+		<DebugType>full</DebugType>
+		<ErrorReport>prompt</ErrorReport>
+		<DefineConstants>VBtoVBNET=True</DefineConstants>
+		<NoWarn>42016,42017,42018,42019,42032</NoWarn>
+		<DebugType>full</DebugType>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<OutputPath>bin\</OutputPath>
+		<DocumentationFile>CES.xml</DocumentationFile>
+		<BaseAddress>285212672</BaseAddress>
+		<ConfigurationOverrideFile>
+		</ConfigurationOverrideFile>
+		<DefineConstants>VBtoVBNET=True</DefineConstants>
+		<DefineDebug>false</DefineDebug>
+		<DefineTrace>true</DefineTrace>
+		<DebugSymbols>false</DebugSymbols>
+		<Optimize>true</Optimize>
+		<RegisterForComInterop>false</RegisterForComInterop>
+		<RemoveIntegerChecks>false</RemoveIntegerChecks>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<WarningLevel>1</WarningLevel>
+		<NoWarn>42016,42017,42018,42019,42032</NoWarn>
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="VBtoDATAVB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>.\VBtoDATAVB.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.VisualBasic">
+			<Name>Microsoft.VisualBasic</Name>
+		</Reference>
+		<Reference Include="Microsoft.VisualBasic.Compatibility">
+			<Name>Microsoft.VisualBasic.Compatibility</Name>
+		</Reference>
+		<Reference Include="System">
+			<Name>System</Name>
+		</Reference>
+		<Reference Include="System.Data">
+			<Name>System.Data</Name>
+		</Reference>
+		<Reference Include="System.Drawing">
+			<Name>System.Drawing</Name>
+		</Reference>
+		<Reference Include="System.Windows.Forms">
+			<Name>System.Windows.Forms</Name>
+		</Reference>
+		<Reference Include="System.Xml">
+			<Name>System.XML</Name>
+		</Reference>
+		<COMReference Include="MCI">
+			<Guid>{C1A8AF28-1257-101B-8FB0-0020AF039CA3}</Guid>
+			<VersionMajor>1</VersionMajor>
+			<VersionMinor>1</VersionMinor>
+			<Lcid>0</Lcid>
+			<WrapperTool>tlbimp</WrapperTool>
+		</COMReference>
+		<COMReference Include="AxMCI">
+			<Guid>{C1A8AF28-1257-101B-8FB0-0020AF039CA3}</Guid>
+			<VersionMajor>1</VersionMajor>
+			<VersionMinor>1</VersionMinor>
+			<Lcid>0</Lcid>
+			<WrapperTool>aximp</WrapperTool>
+		</COMReference>
+	</ItemGroup>
+	<ItemGroup>
+		<Import Include="Microsoft.VisualBasic"/>
+		<Import Include="Microsoft.VisualBasic.Compatibility"/>
+		<Import Include="System"/>
+		<Import Include="System.Collections"/>
+		<Import Include="System.Data"/>
+		<Import Include="System.Diagnostics"/>
+		<Import Include="System.Drawing"/>
+		<Import Include="System.Drawing.Drawing2D"/>
+		<Import Include="System.Windows.Forms"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="AssemblyInfo.vb">
+			<SubType>Code</SubType>
+		</Compile>
+		<Compile Include="frmBranch.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmBranch.resx">
+			<DependentUpon>frmBranch.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="MDIForm1.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="MDIForm1.resx">
+			<DependentUpon>MDIForm1.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="Module1.vb">
+			<SubType>Code</SubType>
+		</Compile>
+		<Compile Include="frmSubjects.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmSubjects.resx">
+			<DependentUpon>frmSubjects.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmLogin.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmLogin.resx">
+			<DependentUpon>frmLogin.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmSplash.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmSplash.resx">
+			<DependentUpon>frmSplash.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmAddUser.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmAddUser.resx">
+			<DependentUpon>frmAddUser.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmDeleteUser.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmDeleteUser.resx">
+			<DependentUpon>frmDeleteUser.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmChangePass.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmChangePass.resx">
+			<DependentUpon>frmChangePass.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmAddQst.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmAddQst.resx">
+			<DependentUpon>frmAddQst.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmStudReg.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmStudReg.resx">
+			<DependentUpon>frmStudReg.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmStartExam.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmStartExam.resx">
+			<DependentUpon>frmStartExam.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmSelectExam.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmSelectExam.resx">
+			<DependentUpon>frmSelectExam.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmViewRptQst.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmViewRptQst.resx">
+			<DependentUpon>frmViewRptQst.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmStudRslt.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmStudRslt.resx">
+			<DependentUpon>frmStudRslt.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="Form1.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="Form1.resx">
+			<DependentUpon>Form1.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmDelSub.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmDelSub.resx">
+			<DependentUpon>frmDelSub.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmDelBranch.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmDelBranch.resx">
+			<DependentUpon>frmDelBranch.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmAbout.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmAbout.resx">
+			<DependentUpon>frmAbout.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmSplash2.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmSplash2.resx">
+			<DependentUpon>frmSplash2.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmExam.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmExam.resx">
+			<DependentUpon>frmExam.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmTT.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmTT.resx">
+			<DependentUpon>frmTT.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmNews.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmNews.resx">
+			<DependentUpon>frmNews.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmFeedback.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmFeedback.resx">
+			<DependentUpon>frmFeedback.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="frmAskdb.vb">
+			<SubType>Form</SubType>
+		</Compile>
+		<EmbeddedResource Include="frmAskdb.resx">
+			<DependentUpon>frmAskdb.vb</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="VBto_Converter.vb">
+			<SubType>Code</SubType>
+		</Compile>    <Compile Include="VBto_Converter_2.vb">
+            <SubType>Code</SubType>
+        </Compile>
+    </ItemGroup>
+	<ItemGroup>
+		<Content Include="MDIForm1_Icon.ico"/>
+	</ItemGroup>
+	<Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets"/>
+	<PropertyGroup>
+		<PreBuildEvent>
+		</PreBuildEvent>
+		<PostBuildEvent>
+		</PostBuildEvent>
+	</PropertyGroup>
+</Project>

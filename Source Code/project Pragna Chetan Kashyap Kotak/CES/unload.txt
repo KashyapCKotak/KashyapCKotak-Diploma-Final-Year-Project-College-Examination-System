@@ -1,0 +1,11 @@
+If dec = 1 Then
+mark = 0
+rslt = "Failed"
+con.Execute ("insert into Result values('" & uname & "','" & bcode & "'," & sem & ",'" & subcode & "','" & exid & "'," & mark & ",'" & rslt & "')")
+MMControl1.Command = "Play"
+Frame2.Visible = False
+Frame1.Visible = False
+Label7.Visible = True
+Command1.Visible = True
+frmExam.BackColor = &H106DC
+End If

@@ -1,0 +1,14 @@
+Provider=MSDAORA.1;Password=pass;User ID=usernaem;Data Source=ffff;Persist Security Info=True
+
+Dim strCon
+strCon = "Driver={Oracle in Oracle in Orahome10g}; " & _
+"CONNECTSTRING=(DESCRIPTION=" & _
+"(ADDRESS=(PROTOCOL=TCP)" & _
+"(HOST=SERVERNAME)(PORT=1521))" & _
+"(CONNECT_DATA=(SERVICE_NAME=TEST))); uid=username;pwd=password;"
+
+
+
+<>
+cn.connectionstring="driver{microsoft odbc for oracle};data source=192.168.0.3,1521;uid=scott;server=book;pwd=tiger"
+<>
